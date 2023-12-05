@@ -6,14 +6,16 @@
         private $name;
         private $price;
         private $description;
+        private $imgUrl;
 
 
-        public function __construct($id, $name, $price, $description){
+        public function __construct($id, $name, $price, $description, $imgUrl){
 
             $this -> setId($id);
             $this -> setName($name);
             $this -> setPrice($price);
             $this -> setDescription($description);
+            $this -> setImgUrl($imgUrl);
         }
 
         /**
@@ -76,6 +78,20 @@
                 return $this;
         }
 
+        /**
+         * Get the value of type
+         */
+        public function getImgUrl() {
+                return $this->imgUrl;
+        }
+
+        /**
+         * Set the value of type
+         */
+        public function setImgUrl($imgUrl): self {
+                $this->imgUrl = $imgUrl;
+                return $this;
+        }
     }
 
 ?>
