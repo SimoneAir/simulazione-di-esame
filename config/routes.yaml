@@ -1,5 +1,22 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+register:
+    path: /register
+    controller: App\Controller\FormRegisterController::registration
+
+login:
+    path: /login
+    controller: App\Controller\FormLoginController::login
+
+home:
+    path: /home
+    controller: App\Controller\MarketListController::getMarketList
+
+products:
+    path: /products
+    controller: App\Controller\ProductListController::getProductList
+
+reservations:
+    path: /reservations
+    controller: App\Controller\ReservationListController::getReservationList
+
+
+
