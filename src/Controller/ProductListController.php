@@ -1,10 +1,10 @@
 <?php
     namespace App\Controller;
 
-use App\Service\ProductService;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+    use App\Service\ProductService;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     
-    class MarketListController extends AbstractController{
+    class ProductListController extends AbstractController{
         private $product_service;
 
         public function __construct(ProductService $product_service){

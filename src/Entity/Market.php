@@ -1,7 +1,7 @@
 <?php
     namespace App\Entity;
 
-    class MarketList{
+    class Market{
         private $id;
         private $name;
         private $address;
