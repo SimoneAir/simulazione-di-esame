@@ -14,7 +14,7 @@
 
         public function getProductList(Request $request){
             $id = $request -> query -> get('id');
-            $productList;
+           // $productList;
 
             switch($id){
                 case 1: {
